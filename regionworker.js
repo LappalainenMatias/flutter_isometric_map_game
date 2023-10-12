@@ -1385,9 +1385,8 @@ bu:function bu(){},
 a_:function a_(a,b,c){this.a=a
 this.b=b
 this.$ti=c},
-k:function k(a,b,c){this.c=a
-this.e=b
-this.b=c},
+k:function k(a,b){this.c=a
+this.b=b},
 bs:function bs(){},
 ab(a,b){return new A.aa(a*2-2*b,a+b)},
 aa:function aa(a,b){this.a=a
@@ -1448,8 +1447,8 @@ s=c>>>8&1023
 d=(c<<2|b>>>20)&1023
 c=b>>>10&1023
 b&=1023
-if(!(a<37))return A.b(B.q,a)
-r=B.q[a]
+if(!(a<37))return A.b(B.p,a)
+r=B.p[a]
 q=""
 p=""
 o=""
@@ -1799,7 +1798,7 @@ if(34>=i)return A.b(r,34)
 s[o]=r[34]
 if(35>=i)return A.b(r,35)
 s[o+1]=r[35]}return new A.bU(t,s)},
-fa(a){var t,s,r,q,p,o,n,m,l,k,j,i,h=A.dM(u.N)
+fa(a,b){var t,s,r,q,p,o,n,m,l,k,j,i,h=A.dM(u.N)
 for(t=a.length,s=0;r=a.length,s<r;a.length===t||(0,A.am)(a),++s){q=a[s]
 p=q.b.V()
 o=B.c.m(q.c)
@@ -1811,9 +1810,9 @@ l=B.c.m(q.c)
 t=""+n+","
 k=""+l
 j=""+m
-i=h.P(0,""+(n-1)+","+j+","+k)
-j=h.P(0,t+j+","+(l+1))
-q.af(!i,!h.P(0,t+(m-1)+","+k),!j)}},
+i=h.P(0,""+(n-b)+","+j+","+k)
+j=h.P(0,t+j+","+(l+b))
+q.af(!i,!h.P(0,t+(m-b)+","+k),!j)}},
 eY(a){switch(a){case B.dQ:return $.dw()
 case B.i:return $.dv()
 case B.e:return $.du()
@@ -2136,10 +2135,10 @@ A.b2.prototype={
 gaA(){var t=this.a
 return t},
 gaC(){var t,s,r,q,p=this
-if(p.c===1)return B.r
+if(p.c===1)return B.q
 t=p.d
 s=t.length-p.e.length-p.f
-if(s===0)return B.r
+if(s===0)return B.q
 r=[]
 for(q=0;q<s;++q){if(!(q<t.length))return A.b(t,q)
 r.push(t[q])}return J.cM(r)},
@@ -2574,13 +2573,13 @@ a1(){return"TileType."+this.b}}
 A.b6.prototype={}
 A.bg.prototype={
 ad(){var t=null
-return A.f([new A.r(B.f,0,-0.2),new A.r(B.e,0,0),new A.r(B.w,0,t),new A.r(B.f,15,-0.2),new A.r(B.e,15,0.4),new A.r(B.i,15,t),new A.r(B.f,30,-0.2),new A.r(B.e,30,0.4),new A.r(B.i,30,t),new A.r(B.f,50,0.1),new A.r(B.e,50,0.4),new A.r(B.v,t,t)],u.c)}}
+return A.f([new A.r(B.f,0,-0.2),new A.r(B.e,0,0),new A.r(B.w,0,t),new A.r(B.f,10,-0.2),new A.r(B.i,10,0.3),new A.r(B.e,10,t),new A.r(B.f,15,-0.2),new A.r(B.e,15,0.4),new A.r(B.i,15,t),new A.r(B.f,20,0.5),new A.r(B.e,20,0.6),new A.r(B.v,t,t)],u.c)}}
 A.r.prototype={}
 A.ca.prototype={
 $1(a){var t,s,r,q,p,o,n,m,l,k=new A.bg(),j=new A.bO(k),i=J.bq(a),h=A.aR(i.h(a,0)),g=A.aR(i.h(a,1)),f=A.cp(i.h(a,2)),e=A.cp(i.h(a,3))
 i=A.aR(i.h(a,4))
-if(!(i>=0&&i<20))return A.b(B.p,i)
-t=B.p[i]
+if(!(i>=0&&i<20))return A.b(B.r,i)
+t=B.r[i]
 i=B.c.m(f)
 s=B.c.m(e)
 r=new A.bG(k)
@@ -2601,7 +2600,7 @@ q=r.aw(h,g,i,s,k)
 p=j.ar(i,s,q.a,q.b,k)
 if(!!p.immutable$list)A.an(A.T("sort"))
 A.e3(p,J.eC(),A.ak(p).c)
-if(t.e)A.fa(p)
+A.fa(p,k)
 o=A.f([],u.l)
 for(k=p.length,i=u.V,n=0;n<p.length;p.length===k||(0,A.am)(p),++n){m=p[n]
 s=m.b
@@ -2674,7 +2673,7 @@ a9=g*0.00020480000000000002
 d=0.366025403784439*(i+a9)
 a9=a2.t(i+d,a9+d)
 if(!(r<t))return A.b(b1,r)
-B.b.j(b1[r],h,B.c.aD(((a+0.5*f+0.25*e+0.125*a5+0.25*a6+0.125*a7+0.0625*a8+0.03125*a9+2)/4-0.71)*100))
+B.b.j(b1[r],h,B.c.aD(((a+0.5*f+0.25*e+0.125*a5+0.25*a6+0.125*a7+0.0625*a8+0.03125*a9+2)/4-0.71)*120))
 a9=b0.x
 a9===$&&A.C()
 a9=a9.t(c,b)
@@ -3179,28 +3178,7 @@ B.bb=new A.a(0.7821684431180708,0.4321472685365301,-0.12128480194602098,0.432147
 B.bE=new A.a(0.7821684431180708,0.4321472685365301,0.4321472685365301,-0.12128480194602098)
 B.c5=new A.a(0.753341017856078,0.37968289875261624,0.37968289875261624,0.37968289875261624)
 B.dM=A.f(t([B.cW,B.cb,B.bn,B.c8,B.cd,B.c0,B.bG,B.bV,B.ct,B.cQ,B.bZ,B.cu,B.cr,B.ce,B.bY,B.cP,B.c9,B.c_,B.di,B.cj,B.bA,B.df,B.aY,B.d7,B.bt,B.aP,B.bJ,B.bz,B.bd,B.cc,B.cY,B.aT,B.d8,B.c4,B.cK,B.c7,B.cg,B.aV,B.c1,B.cn,B.br,B.cB,B.dc,B.c2,B.cN,B.d3,B.bq,B.d_,B.b7,B.bi,B.bf,B.cF,B.bP,B.cE,B.b3,B.da,B.b5,B.aU,B.cl,B.dm,B.db,B.ci,B.cR,B.b4,B.de,B.cD,B.c6,B.bS,B.bw,B.ca,B.cs,B.d6,B.aW,B.cx,B.bQ,B.d5,B.cy,B.cv,B.cG,B.cO,B.bO,B.aQ,B.b0,B.bg,B.bF,B.b9,B.bD,B.cX,B.ch,B.bk,B.c3,B.ba,B.cz,B.b6,B.aR,B.cf,B.cS,B.cU,B.bR,B.d1,B.b1,B.bm,B.dl,B.bs,B.bU,B.cH,B.dg,B.bp,B.co,B.cq,B.dh,B.dd,B.bu,B.bB,B.cw,B.cL,B.bX,B.dj,B.cZ,B.bl,B.by,B.bK,B.cA,B.bh,B.aX,B.cM,B.bI,B.bL,B.d4,B.bT,B.d2,B.bM,B.dk,B.ck,B.be,B.bx,B.cT,B.bH,B.d0,B.cJ,B.cm,B.cC,B.aZ,B.cI,B.b8,B.bj,B.bC,B.cp,B.bN,B.bc,B.d9,B.bv,B.bW,B.b_,B.b2,B.bo,B.cV,B.bb,B.bE,B.c5]),u.J)
-B.dw=new A.k(1,!0,"zoomlevel_19")
-B.dA=new A.k(2,!1,"zoomlevel_18")
-B.dE=new A.k(4,!1,"zoomlevel_17")
-B.dK=new A.k(8,!1,"zoomlevel_16")
-B.dv=new A.k(16,!1,"zoomlevel_15")
-B.dC=new A.k(32,!1,"zoomlevel_14")
-B.dH=new A.k(64,!1,"zoomlevel_13")
-B.ds=new A.k(128,!1,"zoomlevel_12")
-B.dy=new A.k(256,!1,"zoomlevel_11")
-B.dF=new A.k(512,!1,"zoomlevel_10")
-B.dr=new A.k(1024,!1,"zoomlevel_9")
-B.dx=new A.k(2048,!1,"zoomlevel_8")
-B.dD=new A.k(4096,!1,"zoomlevel_7")
-B.dJ=new A.k(8192,!1,"zoomlevel_6")
-B.du=new A.k(16384,!1,"zoomlevel_5")
-B.dB=new A.k(32768,!1,"zoomlevel_4")
-B.dI=new A.k(65536,!1,"zoomlevel_3")
-B.dt=new A.k(131072,!1,"zoomlevel_2")
-B.dz=new A.k(262144,!1,"zoomlevel_1")
-B.dG=new A.k(524288,!1,"zoomlevel_0")
-B.p=A.f(t([B.dw,B.dA,B.dE,B.dK,B.dv,B.dC,B.dH,B.ds,B.dy,B.dF,B.dr,B.dx,B.dD,B.dJ,B.du,B.dB,B.dI,B.dt,B.dz,B.dG]),A.a3("h<k>"))
-B.q=A.f(t([0,0,1048576,531441,1048576,390625,279936,823543,262144,531441,1e6,161051,248832,371293,537824,759375,1048576,83521,104976,130321,16e4,194481,234256,279841,331776,390625,456976,531441,614656,707281,81e4,923521,1048576,35937,39304,42875,46656]),A.a3("h<o>"))
+B.p=A.f(t([0,0,1048576,531441,1048576,390625,279936,823543,262144,531441,1e6,161051,248832,371293,537824,759375,1048576,83521,104976,130321,16e4,194481,234256,279841,331776,390625,456976,531441,614656,707281,81e4,923521,1048576,35937,39304,42875,46656]),A.a3("h<o>"))
 B.ai=new A.d(-2.22474487139,-2.22474487139,-1)
 B.aB=new A.d(-2.22474487139,-2.22474487139,1)
 B.ab=new A.d(-3.0862664687972017,-1.1721513422464978,0)
@@ -3250,7 +3228,28 @@ B.aM=new A.d(2.22474487139,2.22474487139,1)
 B.ar=new A.d(3.0862664687972017,1.1721513422464978,0)
 B.ak=new A.d(1.1721513422464978,3.0862664687972017,0)
 B.dN=A.f(t([B.ai,B.aB,B.ab,B.aH,B.ap,B.aA,B.al,B.aI,B.av,B.ah,B.a7,B.a5,B.aC,B.a9,B.am,B.ay,B.aa,B.a6,B.aq,B.az,B.a4,B.ac,B.a2,B.ae,B.aG,B.aD,B.at,B.aj,B.ao,B.aN,B.af,B.an,B.aK,B.aE,B.ad,B.as,B.ag,B.aF,B.aL,B.a8,B.aJ,B.aw,B.au,B.aO,B.ax,B.aM,B.ar,B.ak]),u.Y)
-B.r=A.f(t([]),u.b)
+B.q=A.f(t([]),u.b)
+B.dw=new A.k(1,"zoomlevel_19")
+B.dA=new A.k(2,"zoomlevel_18")
+B.dE=new A.k(4,"zoomlevel_17")
+B.dK=new A.k(8,"zoomlevel_16")
+B.dv=new A.k(16,"zoomlevel_15")
+B.dC=new A.k(32,"zoomlevel_14")
+B.dH=new A.k(64,"zoomlevel_13")
+B.ds=new A.k(128,"zoomlevel_12")
+B.dy=new A.k(256,"zoomlevel_11")
+B.dF=new A.k(512,"zoomlevel_10")
+B.dr=new A.k(1024,"zoomlevel_9")
+B.dx=new A.k(2048,"zoomlevel_8")
+B.dD=new A.k(4096,"zoomlevel_7")
+B.dJ=new A.k(8192,"zoomlevel_6")
+B.du=new A.k(16384,"zoomlevel_5")
+B.dB=new A.k(32768,"zoomlevel_4")
+B.dI=new A.k(65536,"zoomlevel_3")
+B.dt=new A.k(131072,"zoomlevel_2")
+B.dz=new A.k(262144,"zoomlevel_1")
+B.dG=new A.k(524288,"zoomlevel_0")
+B.r=A.f(t([B.dw,B.dA,B.dE,B.dK,B.dv,B.dC,B.dH,B.ds,B.dy,B.dF,B.dr,B.dx,B.dD,B.dJ,B.du,B.dB,B.dI,B.dt,B.dz,B.dG]),A.a3("h<k>"))
 B.dO={}
 B.t=new A.aq(B.dO,[],A.a3("aq<ah,@>"))
 B.dP=new A.ag("call")
