@@ -1,6 +1,6 @@
 {
-    "name": "anki",
-    "short_name": "anki",
+    "name": "infinite_map",
+    "short_name": "infinite_map",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
