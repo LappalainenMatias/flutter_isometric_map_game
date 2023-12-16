@@ -20,8 +20,6 @@ file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/coll
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/coordinates/iso_coordinate.dart
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/dto/drawing_dto.dart
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/game_objects/create_game_object.dart
-file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/game_objects/dynamic/bird.dart
-file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/game_objects/dynamic/gold_coin.dart
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/game_objects/dynamic/missile.dart
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/game_objects/dynamic/player.dart
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/game_objects/game_object.dart
@@ -34,11 +32,15 @@ file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/heal
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/health_and_damage/health.dart
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/map/map_creation_rules.dart
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/noise/noise.dart
-file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/optimization/visibility_checker.dart
+file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/online/online_game_object_states/missile_state.dart
+file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/online/online_game_object_states/online_game_object_state.dart
+file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/online/online_game_object_states/player_state.dart
+file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/optimization/remove_hidden_tiles.dart
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/region/jsregionworker.dart
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/region/region_creation/region_creator.dart
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/textures/texture_coordinates.dart
 file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/textures/texture_rects.dart
+file:///Users/matiaslappalainen/Documents/flutter_projects/infinite_map/lib/utils/random_id.dart
 org-dartlang-sdk:///lib/_http/crypto.dart
 org-dartlang-sdk:///lib/_http/embedder_config.dart
 org-dartlang-sdk:///lib/_http/http.dart
