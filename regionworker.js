@@ -1692,6 +1692,17 @@ u.Z.a(a)
 return A.e9(a,b,null)},
 f4(a,b){if(typeof a=="function")return a
 else return b.a(A.eH(a))},
+ei(a,b){if(a===B.i)return B.dB.t()
+else if(a===B.e){if(b>=0)return B.dC.t()
+else if(b>-2)return B.dt.t()
+else if(b>-4)return B.du.t()
+else if(b>-8)return B.dv.t()
+else if(b<=-8)return B.dw.t()}else if(a===B.f)if(b>=0)return B.dD.t()
+else if(b>-2)return B.dx.t()
+else if(b>-4)return B.dy.t()
+else if(b>-8)return B.dz.t()
+else if(b<=-8)return B.dA.t()
+throw A.b(A.cU("Tile type not found"))},
 dc(a,b,c,d){var t,s,r,q,p,o,n,m,l,k
 for(t=0;t<10;++t){s=d[t]
 r=s.b
@@ -1716,17 +1727,6 @@ k[3]=o-(q+q)-2.02507812496
 r=new A.bj(k,l)
 m.d=u.R.a(r)
 return m}}throw A.b(A.cU("No tile type found for elevation: "+A.i(a)+", moisture: "+A.i(b)+". Fix the rules!"))},
-ei(a,b){if(a===B.i)return B.dB.t()
-else if(a===B.e){if(b>=0)return B.dC.t()
-else if(b>-2)return B.dt.t()
-else if(b>-4)return B.du.t()
-else if(b>-8)return B.dv.t()
-else if(b<=-8)return B.dw.t()}else if(a===B.f)if(b>=0)return B.dD.t()
-else if(b>-2)return B.dx.t()
-else if(b>-4)return B.dy.t()
-else if(b>-8)return B.dz.t()
-else if(b<=-8)return B.dA.t()
-throw A.b(A.cU("Tile type not found"))},
 f8(a){var t,s=a^48
 if(s<10)return s
 t=(a|32)-97
