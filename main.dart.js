@@ -8195,9 +8195,10 @@ _.b=e},
 jf:function jf(a,b,c){var _=this
 _.a=$
 _.b=a
-_.c=0
-_.d=b
-_.U$=_.e=0
+_.c=10
+_.d=0
+_.e=b
+_.U$=_.f=0
 _.a2$=c
 _.aq$=_.ad$=0
 _.az$=!1},
@@ -8316,7 +8317,6 @@ _.d=c
 _.e=d
 _.f=e
 _.r=f
-_.w=10
 _.x=g
 _.a=h},
 u6:function u6(a){this.a=a},
@@ -36499,9 +36499,10 @@ F(){return"SpriteSheetItem."+this.b},
 bH(){var s=this.d,r=this.e,q=this.c
 return new Float32Array(A.mc(A.a([32*s+r,32*q+r,32*(s+1)-r,32*(q+1)-r],t.zp)))}}
 A.jf.prototype={
-SW(a){var s,r,q,p,o,n,m,l=this,k=l.c=B.f.bP(a.a-l.d.a,1000)/1000
-if(k>0.017)++l.e
-l.d=a
+SW(a){var s,r,q,p,o,n,m,l=this,k=l.d=B.f.bP(a.a-l.e.a,1000)/1000
+if(k>0.017)++l.f
+l.e=a
+l.c+=k
 s=l.b
 s===$&&A.b()
 if(s.Jx()===B.j0)s.zz()
@@ -36790,38 +36791,38 @@ $S:0}
 A.EW.prototype={
 F(){return"ZoomDirection."+this.b}}
 A.At.prototype={
-av(a,b){var s,r,q,p,o,n,m,l,k=this,j=null,i=k.b,h=k.w+i.c
-k.w=h
-s=k.c
-s.d[0]=h
+av(a,b){var s,r,q,p,o,n,m,l=this,k=null,j=l.c,i=l.b,h=j.d
+h[0]=i.c
+s=b.a
+h[1]=s
+r=b.b
+h[2]=r
 h=$.ai()
-r=h.aH()
-k.r=r
-r.slQ(s)
+q=h.aH()
+l.r=q
+q.slQ(j)
 h=h.aH()
 h.swa(B.d_)
-k.f=h
+l.f=h
 h.sa6(0,A.av(102,33,150,243))
-h=k.d
-h.d[0]=k.w
-k.f.slQ(h)
+h=l.d
+h.d[0]=i.c
+l.f.slQ(h)
 i=i.b
 i===$&&A.b()
 h=i.a
 h===$&&A.b()
-q=i.a0e()
-i=b.a
-s=b.b
-p=Math.min(i/h.he(0),s/(h.he(0)/h.e))
-a.cT(0,p,p)
-r=h.a
-a.am(0,-r.a+i/p/2,-r.b+s/p/2)
-for(i=q.a,s=i.length,r=k.x,o=k.e,n=0;n<i.length;i.length===s||(0,A.B)(i),++n){m=i[n]
-l=m.a
-a.wL(r,l.a,l.b,j,j,m.b,o)}a.bQ(A.CL(new A.q(h.gdZ(h).a,h.gdZ(h).b),new A.q(h.gfM(h).a,h.gfM(h).b)),k.f)
-for(i=q.b,s=i.length,n=0;n<i.length;i.length===s||(0,A.B)(i),++n){q=i[n]
-l=q.a
-a.wL(r,l.a,l.b,j,j,q.b,o)}a.bQ(A.CL(new A.q(h.gdZ(h).a,h.gdZ(h).b),new A.q(h.gfM(h).a,h.gfM(h).b)),k.r)},
+p=i.a0e()
+o=Math.min(s/h.he(0),r/(h.he(0)/h.e))
+a.cT(0,o,o)
+i=h.a
+a.am(0,-i.a+s/o/2,-i.b+r/o/2)
+for(j=p.a,i=j.length,s=l.x,r=l.e,n=0;n<j.length;j.length===i||(0,A.B)(j),++n){m=j[n]
+q=m.a
+a.wL(s,q.a,q.b,k,k,m.b,r)}a.bQ(A.CL(new A.q(h.gdZ(h).a,h.gdZ(h).b),new A.q(h.gfM(h).a,h.gfM(h).b)),l.f)
+for(j=p.b,i=j.length,n=0;n<j.length;j.length===i||(0,A.B)(j),++n){p=j[n]
+q=p.a
+a.wL(s,q.a,q.b,k,k,p.b,r)}a.bQ(A.CL(new A.q(h.gdZ(h).a,h.gdZ(h).b),new A.q(h.gfM(h).a,h.gfM(h).b)),l.r)},
 hl(a){return!1}}
 A.u6.prototype={
 ah(){return new A.JO(B.j)}}
@@ -36847,7 +36848,7 @@ n===$&&A.b()
 n=n.c.c
 j=j.c
 j===$&&A.b()
-return A.kF(new A.cK(B.b3,A.a5J(A.a([r,q,p,A.Ef("Regions total/visible/queue: "+o+"/"+n+"/"+j.b.a,B.cS),A.Ef("Frames > 16 ms: "+k.e,B.cS)],t.E),B.eO,B.dH),m),s,m,m,m,m,m,m,m)}}
+return A.kF(new A.cK(B.b3,A.a5J(A.a([r,q,p,A.Ef("Regions total/visible/queue: "+o+"/"+n+"/"+j.b.a,B.cS),A.Ef("Frames > 16 ms: "+k.f,B.cS)],t.E),B.eO,B.dH),m),s,m,m,m,m,m,m,m)}}
 A.XN.prototype={
 gE(a){var s=this,r=s.d
 return r==null?s.d=B.d.ac(s.a,s.b,s.c):r},
